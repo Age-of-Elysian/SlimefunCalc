@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+    <meta charset="UTF-8" />
+
+    <title>SlimefunCalc</title>
+
+    <link rel="icon" href="assets/aoe.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="calc.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container is-fullhd">
+
+      <p style="font-size: 22px;"><strong>AoE Slimefun Calculator</strong></p>
+      <hr />
+
+      <div class="container is-pulled-left is-widescreen">
+        <table class="table is-bordered">
+          <thead>
+            <tr>
+              <th class="has-text-centered">Products</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/productCarbonado.webp" /> Carbonado</th>
+              <th><input id="carbonadoSum" oninput="refreshCalc();" style="vertical-align: middle;" class="input is-small" type="number" placeholder="0" /></th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/productReinforcedIngot.webp" /> Reinforced Ingot</th>
+              <th><input id="reinforcedIngotSum" oninput="refreshCalc();" style="vertical-align: middle;" class="input is-small" type="number" placeholder="0" /></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container is-pulled-right is-fullhd">
+        <table class="table is-bordered">
+          <thead>
+            <tr>
+              <th class="has-text-centered">Resources</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceCoal.webp" /> Coal</th>
+              <th style="vertical-align: middle;" id="coalSum">0</th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceFlint.webp" /> Flint</th>
+              <th style="vertical-align: middle;" id="flintSum">0</th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceIronDust.webp" /> Iron Dust</th>
+              <th style="vertical-align: middle;" id="ironDustSum">0</th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceAluminumDust.webp" /> Aluminum Dust</th>
+              <th style="vertical-align: middle;" id="aluminumDustSum">0</th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceSilverDust.webp" /> Silver Dust</th>
+              <th style="vertical-align: middle;" id="silverDustSum">0</th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceGoldDust.webp" /> Gold Dust</th>
+              <th style="vertical-align: middle;" id="goldDustSum">0</th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceCopperDust.webp" /> Copper Dust</th>
+              <th style="vertical-align: middle;" id="copperDustSum">0</th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceLeadDust.webp" /> Lead Dust</th>
+              <th style="vertical-align: middle;" id="leadDustSum">0</th>
+            </tr>
+            <tr>
+              <th><img style="vertical-align: middle;" class="is-16x16" src="assets/resourceTinDust.webp" /> Tin Dust</th>
+              <th style="vertical-align: middle;" id="tinDustSum">0</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
