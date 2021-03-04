@@ -1,0 +1,2 @@
+# SlimefunCalc
+Slimefun Resource Calculator
